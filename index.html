@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <title>HomePage</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+<body>
+<div class="page">
+
+<!-- Header -->
+
+<header class="header" id="header">
+    <div class="container-fluid">
+        <div class="header__inner">
+            <a class="header__logo" href="index.html">
+                <img class="logo" src="assets/img/header/logo.svg" alt="">
+            </a>
+            <div class="header__content" id="nav">
+                <div class="header__mobile">
+                    <a class="header__mobile-logo" href="index.html">
+                        <img class="header__mobile-img" src="assets/img/header/logo.svg" alt="">
+                    </a>
+                    <button class="header__mobile-close" id="nav__close" type="button">
+                        <span class="header__mobile-span">1</span>
+                        <span class="header__mobile-span">2</span>
+                    </button>
+                </div>
+                <nav class="nav">
+                    <a class="nav__item" href="index.html">Главная</a>
+                    <a class="nav__item" href="portfolio.html" >Портфолио</a>
+                    <a class="nav__item" href="services.html" >Услуги</a>
+                    <a class="nav__item" href="contacts.html" >Контакты</a>
+                </nav>
+                <div class="header__call">
+                    <a class="header__call-link" href="tel:+79218888888">+7 (921) 888 88 88</a>
+                    <button class="header__call-text" type="button" data-modal="#call__modal">Бесплатная консультация</button>
+                </div>
+            </div>
+            <button class="burger" id="navToggle" type="button">
+                <span class="burger__line">1</span>
+                <span class="burger__line">2</span>
+                <span class="burger__line">3</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Content -->
+
+<section class="intro">
+    <div class="intro__slider swiper slider" id="intro-slider">
+        <div class="intro__swiper-control-panel">
+            <div class="intro__swiper-control-panel-arrows">
+                <button class="intro__arrows intro__arrows-prev" type="button">
+                    <svg class="intro__arrows-icon">
+                        <use xlink:href="#arrow-right2">
+                        </use>
+                    </svg>
+                </button>
+
+                <button class="intro__arrows intro__arrows-next" type="button">
+                    <svg class="intro__arrows-icon">
+                        <use xlink:href="#arrow-right2">
+                        </use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="swiper-control-panel__pagination-wrapper">
+                <div class="swiper-control-panel__pagination">
+                    <div class="pagination-slider-current">01</div>
+                    <div class="swiper-pagination intro__swiper-pagination"></div>
+                    <div class="pagination-slider-total">01</div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-wrapper">
+            <div class="intro__slider-item swiper-slide">
+                <img class="intro__slider-img" src="assets/img/intro/intro.jpg" alt="">
+            </div>
+            <div class="intro__slider-item swiper-slide">
+                <img class="intro__slider-img" src="assets/img/intro/intro1.jpg" alt="">
+            </div>
+            <div class="intro__slider-item swiper-slide">
+                <img class="intro__slider-img" src="assets/img/intro/intro.jpg" alt="">
+            </div>
+            <div class="intro__slider-item swiper-slide">
+                <img class="intro__slider-img" src="assets/img/intro/intro1.jpg" alt="">
+            </div>
+            <div class="intro__slider-item swiper-slide">
+                <img class="intro__slider-img" src="assets/img/intro/intro.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="intro__content">
+            <div class="intro__content-text">Ландшафтная студия VESNA</div>
+            <h1 class="intro__content-title">
+                Создаем авторские ландшафты
+                с вашим характером
+            </h1>
+            <h3 class="intro__content-subtitle">От идеи до полной реализации
+            </h3>
+        </div>
+        <a class="intro__last-project" href="">
+            <p class="intro__last-text">Последний
+            проект</p>
+            <img class="intro__last-img" src="assets/img/intro/last.jpg" alt="">
+            <svg class="intro__last-icon">
+                <use xlink:href="#arrow-right2">
+                </use>
+            </svg>
+        </a>
+    </div>
+
+
+
+</section>
+
+<section class="create" data-aos="fade-up" data-aos-offset="200">
+    <div class="create__inner">
+        <div class="container">
+            <div class="create__content">
+                <h2 class="create__title">
+                Создаем не просто красивый сад с картинки,
+                <span>а место, куда захочется возвращаться</span>
+                </h2>
+                <div class="create__text">
+                    От проекта до ухода за садом – один подрядчик.
+                    Мы несем ответственность за все этапы работ. Ваш сад будет органичен и выполнен в одном стиле. Мы делаем участок
+                    практичным, безопасным и комфортным для всех членов семьи.
+                    В работе мы используем современные и качественные материалы,
+                    как залог долговечности производимых работ. Благодаря нашему подходу исключаются возможные ошибки до начала строительных работ и предотвращаются непредвиденные расходы.
+                    <img class="create__decor create__decor--left" src="assets/img/decor/1.png" alt="">
+                    <img class="create__decor create__decor--right" src="assets/img/decor/1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="vis" data-aos="fade-up" data-aos-offset="200">
+    <div class="container-fluid">
+        <h2 class="vis__title"><span>Доверьте свой участок         профессионалам - </span><br>
+        пусть они позаботятся о ландшафтном дизайне
+        и благоустройстве
+        </h2>
+        <div class="vis__content">
+            <div class="vis__left">
+               <div class="parallax-simple-layer">
+                    <div class="parallax-simple-layer__first-box parallax-layer">
+                        <img class="parallax-simple-layer__img" data-speed="4" src="assets/img/vis/img1.jpg" alt="">
+                        <p class="parallax-simple-layer__text">Пример 3D-визуализации</p>
+                    </div>
+                </div>
+                <div class="parallax-simple-layer">
+                    <div class="parallax-simple-layer__second-box parallax-layer">
+                        <img class="parallax-simple-layer__img"
+                        data-speed="14" src="assets/img/vis/img2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="vis__right">
+                <ul>
+                    <li class="vis__right-li">
+                    Вы оцените будущий ландшафт с помощью 3D-визуализации и, если это требуется,
+                    внесете изменения.
+                    <img class="vis__right-img" src="assets/img/vis/1.jpg" alt="">
+                    </li>
+                    <li class="vis__right-li">Вам не придется контролировать качество нашей работы: отдыхайте и занимайтесь своими делами, пока специалисты технадзора
+                    следят за процессом.
+                    <img class="vis__right-img" src="assets/img/vis/1.jpg" alt="">
+                    </li>
+                    <li class="vis__right-li">Вы подарите себе красивый и ухоженный сад, переложите заботы по уходу на наши плечи и получите  гарантию на все работы.
+                    <img class="vis__right-img" src="assets/img/vis/1.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img class="vis__bg" src="assets/img/decor/bgDecor.png" alt="">
+    </div>
+</section>
+
+
+<section class="wedo" data-aos="fade-up" data-aos-offset="200">
+    <div class="container">
+        <h2 class="wedo__title">Что мы делаем</h2>
+        <div class="wedo__content">
+            <div class="wedo__item">
+                <img class="wedo__img" src="assets/img/wedo/1.jpg" alt="">
+                <h3 class="wedo__subtitle">Проектирование</h3>
+                <ul>
+                    <li class="wedo__li">Новый качественный подход к проектированию</li>
+                    <li class="wedo__li">Детальная разработка всех инженерных разделов проекта</li>
+                    <li class="wedo__li">Расчет освещенности участка</li>
+                    <li class="wedo__li">Реализация идей любой сложности</li>
+                    <li class="wedo__li">Европейский подход</li>
+                    <li class="wedo__li">Применение нестандартных современных идей и технологий</li>
+                    <li class="wedo__li">Точный расчет бюджетов строительства</li>
+                </ul>
+            </div>
+            <div class="wedo__item">
+                <img class="wedo__img" src="assets/img/wedo/2.jpg" alt="">
+                <h3 class="wedo__subtitle">Озеленение</h3>
+                <ul>
+                    <li class="wedo__li">Прямые поставки посадочного материала из лучших европейских питомников</li>
+                    <li class="wedo__li">Использование новейших технологий при посадке</li>
+                    <li class="wedo__li">Новый качественный подход к созданию пространств</li>
+                    <li class="wedo__li">Европейские решения</li>
+                    <li class="wedo__li">Длительная гарантия на все работы и посадочный материал</li>
+                    <li class="wedo__li">Сервисное обслуживание</li>
+                </ul>
+            </div>
+            <div class="wedo__item">
+                <img class="wedo__img" src="assets/img/wedo/3.jpg" alt="">
+                <h3 class="wedo__subtitle">Благоустройство</h3>
+                <ul>
+                    <li class="wedo__li">Все виды строительно-монтажных работ по благоустройству</li>
+                    <li class="wedo__li">Инновационные решения</li>
+                    <li class="wedo__li">длительная гарантия на все работы</li>
+                    <li class="wedo__li">Строительство водоемов любой сложности</li>
+                    <li class="wedo__li">Разработка индивидуальных малых архитектурных обхектов</li>
+
+                </ul>
+            </div>
+        </div>
+        <a class="btn btn--center" href="services.html">Выбрать услугу</a>
+    </div>
+</section>
+
+
+<section class="choice" data-aos="fade-up" data-aos-offset="200">
+    <div class="choice__inner">
+        <div class="container-fluid">
+            <div class="choice__content">
+                <div class="choice__left parallax-simple-layer">
+                    <div class="choice__img-wrapper">
+                        <img class="choice__img" src="assets/img/choice/magazine1.png" alt="">
+                    </div>
+                </div>
+                <div class="choice__right instruction">
+                    <div class="instruction__content">
+                        <h4 class="instruction__title">Пришлем инструкцию!</h4>
+                        <img class="instruction__img" src="assets/img/choice/magazine1.png" alt="">
+                        <input class="input" type="text" placeholder="Ваш Email">
+                        <div class="checkbox">
+                            <input class="checkbox__input" type="checkbox" id="agreement" name="" value="agreement">
+                            <label class="checkbox__label" for="agreement">
+                                <p>Я даю согласие на обработку своих&nbsp;
+                                <a href="">
+                                    <span>персональных данных</span>
+                                </a>
+                                </p>
+
+                            </label>
+                        </div>
+                        <div class="instruction__footer">
+                            <button class="btn">Хочу инструкцию</button>
+                        </div>
+                    </div>
+                </div>
+                <img class="choice__decor1" src="assets/img/decor/bgDecor.png" alt="">
+                <img class="choice__decor2" src="assets/img/decor/bgDecor.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="projects" data-aos="fade-up" data-aos-offset="200">
+    <div class="container-fluid">
+        <h2 class="projects__title">Наши проекты</h2>
+        <div class="projects__items">
+            <a class="projects__item" href="" target="_blank">
+                <img class="projects__item-img" src="assets/img/projects/project1.jpg" alt="">
+                <span class="projects__item-mobile-img-wrapper">
+                    <svg class="projects__item-mobile-img">
+                        <use xlink:href="#arrow-right2">
+                        </use>
+                    </svg>
+                </span>
+                <span class="projects__item-hover-wrapper">
+                    <span class="projects__item-hover">
+                        <h4 class="projects__item-hover-title">Lorem Ipsum lorem ipsum lorem</h4>
+                        <ul class="project-info project-info__projects">
+                            <li class="project-info__item">
+                                <h5 class="project-info__title">Реализация</h5>
+                                <div class="project-info__core">2018-2019</div>
+                            </li>
+                            <li class="project-info__item">
+                                <h5 class="project-info__title">Площадь</h5>
+                                <div class="project-info__core">35 соток</div>
+                            </li>
+                            <li class="project-info__item">
+                                <h5 class="project-info__title">Месторасположение</h5>
+                                <div class="project-info__core">Ленинградская область</div>
+                            </li>
+                        </ul>
+                    </span>
+                </span>
+            </a>
+
+            <a class="projects__item" href="" target="_blank">
+                <img class="projects__item-img" src="assets/img/projects/project2.jpg" alt="">
+                <span class="projects__item-mobile-img-wrapper">
+                    <svg class="projects__item-mobile-img">
+                        <use xlink:href="#arrow-right2">
+                        </use>
+                    </svg>
+                </span>
+                <span class="projects__item-hover-wrapper">
+                    <span class="projects__item-hover">
+                        <h4 class="projects__item-hover-title">Lorem Ipsum lorem ipsum lorem</h4>
+                        <ul class="project-info project-info__projects">
+                            <li class="project-info__item">
+                                <h5 class="project-info__title">Реализация</h5>
+                                <div class="project-info__core">2018-2019</div>
+                            </li>
+                            <li class="project-info__item">
+                                <h5 class="project-info__title">Площадь</h5>
+                                <div class="project-info__core">35 соток</div>
+                            </li>
+                            <li class="project-info__item">
+                                <h5 class="project-info__title">Месторасположение</h5>
+                                <div class="project-info__core">Ленинградская область</div>
+                            </li>
+                        </ul>
+                    </span>
+                </span>
+            </a>
+
+            <a class="projects__item" href="" target="_blank">
+                <img class="projects__item-img" src="assets/img/projects/project3.jpg" alt="">
+                <span class="projects__item-mobile-img-wrapper">
+                    <svg class="projects__item-mobile-img">
+                        <use xlink:href="#arrow-right2">
+                        </use>
+                    </svg>
+                </span>
+                <span class="projects__item-hover-wrapper">
+                    <span class="projects__item-hover">
+                        <h4 class="projects__item-hover-title">Lorem Ipsum lorem ipsum lorem</h4>
+                        <ul class="project-info project-info__projects">
+                            <li class="project-info__item">
+                                <h5 class="project-info__title">Реализация</h5>
+                                <div class="project-info__core">2018-2019</div>
+                            </li>
+                            <li class="project-info__item">
+                                <h5 class="project-info__title">Площадь</h5>
+                                <div class="project-info__core">35 соток</div>
+                            </li>
+                            <li class="project-info__item">
+                                <h5 class="project-info__title">Месторасположение</h5>
+                                <div class="project-info__core">Ленинградская область</div>
+                            </li>
+                        </ul>
+                    </span>
+                </span>
+            </a>
+
+            <a class="projects__item" href="" target="_blank">
+                <img class="projects__item-img" src="assets/img/projects/project4.jpg" alt="">
+                <span class="projects__item-mobile-img-wrapper">
+                    <svg class="projects__item-mobile-img">
+                        <use xlink:href="#arrow-right2">
+                        </use>
+                    </svg>
+                </span>
+                <span class="projects__item-hover-wrapper">
+                    <span class="projects__item-hover">
+                        <h4 class="projects__item-hover-title">Lorem Ipsum lorem ipsum lorem</h4>
+                        <ul class="project-info project-info__projects">
+                            <li class="project-info__item">
+                                <h5 class="project-info__title">Реализация</h5>
+                                <div class="project-info__core">2018-2019</div>
+                            </li>
+                            <li class="project-info__item">
+                                <h5 class="project-info__title">Площадь</h5>
+                                <div class="project-info__core">35 соток</div>
+                            </li>
+                            <li class="project-info__item">
+                                <h5 class="project-info__title">Месторасположение</h5>
+                                <div class="project-info__core">Ленинградская область</div>
+                            </li>
+                        </ul>
+                    </span>
+                </span>
+            </a>
+            <a class="projects__item-all" href="portfolio.html" target="_blank">Все проекты
+                <svg class="projects__item-arrow">
+                    <use xlink:href="#arrow-right2">
+                    </use>
+                </svg>
+            </a>
+        </div>
+
+
+<!--
+        <div class="projects__mobile-items">
+
+            <div class="projects__mobile-item">
+                <img class="projects__mobile-img" src="assets/img/projects/project1.jpg" alt="">
+                <a class="projects__mobile-link" href="">
+                    <svg class="projects__mobile-arrow">
+                        <use xlink:href="#arrow-right2">
+                        </use>
+                    </svg>
+                </a>
+            </div>
+            <div class="projects__mobile-item">
+                <img class="projects__mobile-img" src="assets/img/projects/project2.jpg" alt="">
+                    <a class="projects__mobile-link" href="">
+                        <svg class="projects__mobile-arrow">
+                            <use xlink:href="#arrow-right2">
+                            </use>
+                        </svg>
+                    </a>
+            </div>
+            <div class="projects__mobile-item">
+                <img class="projects__mobile-img" src="assets/img/projects/project3.jpg" alt="">
+                    <a class="projects__mobile-link" href="">
+                        <svg class="projects__mobile-arrow">
+                            <use xlink:href="#arrow-right2">
+                            </use>
+                        </svg>
+                    </a>
+
+            </div>
+            <div class="projects__mobile-item">
+                <img class="projects__mobile-img" src="assets/img/projects/project4.jpg" alt="">
+                    <a class="projects__mobile-link" href="">
+                        <svg class="projects__mobile-arrow">
+                            <use xlink:href="#arrow-right2">
+                            </use>
+                        </svg>
+                    </a>
+            </div>
+        </div>
+-->
+    </div>
+</section>
+
+<section class="dream" data-aos="fade-up" data-aos-offset="200">
+    <div class="dream__inner">
+        <div class="container">
+            <h2 class="dream__title">4 шага до реализации проекта
+                <span>вашей мечты</span>
+            </h2>
+            <div class="dream__items">
+                <div class="dream__item">
+                    <div class="dream__item-number">01</div>
+                    <div class="dream__item-text"><span>Расскажите нам, что вы хотите увидеть на своем участке</span>
+                    Побеседуйте с нашим специалистом. Он приедет к вам в любое удобное время.</div>
+                </div>
+                <div class="dream__item">
+                    <div class="dream__item-number">02</div>
+                    <div class="dream__item-text"><span>Оцените проект, который разработают наши специалисты, и внесите изменения</span>
+                    Архитектор разработает проект ландшафтного дизайна и сделает 3D-визуализацию.</div>
+                </div>
+                <div class="dream__item">
+                    <div class="dream__item-number">03</div>
+                    <div class="dream__item-text"><span>Дождитесь окончания ландшафтных работ</span>
+                    Вы получите идеальный участок с хорошим дренажом, мощеными дорожками и площадками, высаженными растениями — деревьями, кустарниками, цветами
+                    и газоном.</div>
+                </div>
+                <div class="dream__item">
+                    <div class="dream__item-number">04</div>
+                    <div class="dream__item-text"><span>Делегируйте уход за участком профессионалам</span>
+                    При необходимости мы будем приезжать регулярно и следить за состоянием участка.</div>
+                </div>
+            </div>
+            <img class="dream__decor" src="assets/img/decor/bgDecor.png" alt="">
+        </div>
+    </div>
+</section>
+
+
+<section class="why-we" data-aos="fade-up" data-aos-offset="200">
+    <div class="why-we__inner">
+        <div class="container">
+            <h2 class="why-we__title">Почему нас выбирают</h2>
+            <div class="why-we__items">
+                <div class="why-we__item">
+                    <img class="why-we__img" src="assets/img/whyWe/1.svg" alt="">
+                    <div class="why-we__text">Создаем проекты, которые точно можно реализовать</div>
+                </div>
+                <div class="why-we__item">
+                    <img class="why-we__img" src="assets/img/whyWe/2.svg" alt="">
+                    <div class="why-we__text">Наши объекты
+                    легко эксплуатировать</div>
+                </div>
+                <div class="why-we__item">
+                    <img class="why-we__img" src="assets/img/whyWe/3.svg" alt="">
+                    <div class="why-we__text">Делаем с умом
+                    под любой бюджет</div>
+                </div>
+                <div class="why-we__item">
+                    <img class="why-we__img" src="assets/img/whyWe/4.svg" alt="">
+                    <div class="why-we__text">У нас высокое качество
+                    посадочного материала</div>
+                </div>
+                <div class="why-we__item">
+                    <img class="why-we__img" src="assets/img/whyWe/5.svg" alt="">
+                    <div class="why-we__text">Даем гарантию на все
+                    виды работ</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="reviews" data-aos="fade-up" data-aos-offset="200">
+    <div class="container">
+        <div class="reviews__inner">
+            <h2 class="reviews__title">Отзывы о нас</h2>
+            <div class="swiper slider reviews__slider" id="reviews-slider">
+                <div class="swiper-control-panel__pagination reviews__pagination">
+                    <div class="pagination-slider-current reviews__pagination-slider-current">01</div>
+                    <div class="swiper-pagination reviews__swiper-pagination"></div>
+                    <div class="pagination-slider-total reviews__pagination-slider-total">01</div>
+                </div>
+                <div class="swiper-wrapper reviews__items">
+                    <div class="reviews__item swiper-slide">
+                        <div class="reviews__img-wrapper">
+                            <img class="reviews__img" src="assets/img/reviews/main.jpg" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <img class="reviews__content-img" src="assets/img/reviews/tree.png">
+                            <div class="reviews__content-name">Анна Смирнова</div>
+                            <h5 class="reviews__content-title">Благоустройство сада в Агалатово</h5>
+                            <div class="reviews__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item swiper-slide">
+                        <div class="reviews__img-wrapper">
+                            <img class="reviews__img" src="assets/img/reviews/main.jpg" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <img class="reviews__content-img" src="assets/img/reviews/tree.png">
+                            <div class="reviews__content-name">Анна Смирнова</div>
+                            <h5 class="reviews__content-title">Благоустройство сада в Агалатово</h5>
+                            <div class="reviews__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item swiper-slide">
+                        <div class="reviews__img-wrapper">
+                            <img class="reviews__img" src="assets/img/reviews/main.jpg" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <img class="reviews__content-img" src="assets/img/reviews/tree.png">
+                            <div class="reviews__content-name">Анна Смирнова</div>
+                            <h5 class="reviews__content-title">Благоустройство сада в Агалатово</h5>
+                            <div class="reviews__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item swiper-slide">
+                        <div class="reviews__img-wrapper">
+                            <img class="reviews__img" src="assets/img/reviews/main.jpg" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <img class="reviews__content-img" src="assets/img/reviews/tree.png">
+                            <div class="reviews__content-name">Анна Смирнова</div>
+                            <h5 class="reviews__content-title">Благоустройство сада в Агалатово</h5>
+                            <div class="reviews__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="reviews__arrows reviews__arrows-prev"
+            type="button">
+                <svg class="reviews__arrows-icon">
+                    <use xlink:href="#arrow-right2">
+                    </use>
+                </svg>
+            </button>
+
+            <button class="reviews__arrows reviews__arrows-next"
+            type="button">
+                <svg class="reviews__arrows-icon">
+                    <use xlink:href="#arrow-right2">
+                    </use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+<!--intro//-//-//- + счетчик-->
+
+<section class="questions" data-aos="fade-up" data-aos-offset="200">
+    <div class="container">
+        <div class="questions__inner">
+            <div class="questions__left">
+                <h2 class="questions__left-title">Часто задаваемые вопросы</h2>
+                <ul>
+                    <li class="questions__li">
+                        <div class="questions__li-header content_toggle">
+                            <h4 class="questions__li-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                            <div class="questions__li-event">
+                                <span class="questions__line">1</span>
+                                <span class="questions__line">2</span>
+                            </div>
+                        </div>
+                        <div class="questions__li-text content_block">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e
+                        </div>
+                    </li>
+                    <li class="questions__li">
+                        <div class="questions__li-header content_toggle">
+                            <h4 class="questions__li-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                            <div class="questions__li-event">
+                                <span class="questions__line">1</span>
+                                <span class="questions__line">2</span>
+                            </div>
+                        </div>
+                        <div class="questions__li-text content_block">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e
+                        </div>
+                    </li>
+                    <li class="questions__li">
+                        <div class="questions__li-header content_toggle">
+                            <h4 class="questions__li-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                            <div class="questions__li-event">
+                                <span class="questions__line">1</span>
+                                <span class="questions__line">2</span>
+                            </div>
+                        </div>
+                        <div class="questions__li-text content_block">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e
+                        </div>
+                    </li>
+                    <li class="questions__li">
+                        <div class="questions__li-header content_toggle">
+                            <h4 class="questions__li-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                            <div class="questions__li-event">
+                                <span class="questions__line">1</span>
+                                <span class="questions__line">2</span>
+                            </div>
+                        </div>
+                        <div class="questions__li-text content_block">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e
+                        </div>
+                    </li>
+                    <li class="questions__li">
+                        <div class="questions__li-header content_toggle">
+                            <h4 class="questions__li-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                            <div class="questions__li-event">
+                                <span class="questions__line">1</span>
+                                <span class="questions__line">2</span>
+                            </div>
+                        </div>
+                        <div class="questions__li-text content_block">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="questions__right instruction">
+                <div class="questions__right-content instruction__content">
+                    <h4 class="questions__right-title instruction__title">Как выбрать растения для сада?</h4>
+
+                    <h5 class="questions__right-title questions__right-subtitle">Пришлем инструкцию!</h5>
+                    <img class="instruction__img2" src="assets/img/choice/magazine1.png" alt="">
+                    <input class="input" type="text" placeholder="Ваш Email">
+                    <div class="checkbox">
+                        <input class="checkbox__input" type="checkbox" id="questions" name="" value="agreement">
+                        <label class="checkbox__label" for="questions">
+                            <p>Я даю согласие на обработку своих&nbsp;
+                                <a href="">
+                                    <span>персональных данных</span>
+                                </a>
+                            </p>
+                        </label>
+                    </div>
+                    <div class="questions__right-footer instruction__footer">
+                        <button class="btn">Хочу инструкцию</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="questions__any">
+            <div class="questions__any-content">
+                <h4 class="questions__any-title">Остались вопросы?</h4>
+                <h5 class="questions__any-subtitle">Пригласите ландшафтного дизайнера на участок!</h5>
+            </div>
+            <div class="questions__any-call" data-modal="#call__modal">
+                <img class="questions__any-decor" src="assets/img/decor/arrow.png" alt="">
+                <button class="btn">Перезвоните мне</button>
+                <img class="questions__any-decor2" src="assets/img/decor/arrow1.png" alt="">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <ul class="info">
+                    <li class="info__list">
+                        <a class="info__number" href="tel:+74955672815">+7 (495) 567-28-15</a>
+                    </li>
+                    <li class="info__list">
+                        <a class="info__mail" href="mailto:info@vesna.ru">info@vesna.ru</a>
+                    </li>
+                </ul>
+                <a class="footer__logo-wrapper" href="index.html">
+                    <img class="footer__logo-img" src="assets/img/footer/logo.svg" alt="">
+                </a>
+                <div class="info__socials">
+                    <ul class="info__list info__list-flex-end">
+                        <li class="info__socials-link">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <svg class="info__list-social">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="info__socials-link">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <svg class="info__list-social">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright-text">© 2021 VESNA</div>
+                <a class="footer__copyright-conf" href="">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Sprite -->
+<svg style="display: none;">
+
+    <symbol id="arrow-right2" viewbox="0 0 15.698 8.706">
+        <g>
+            <polygon points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "/>
+        </g>
+    </symbol>
+
+    <symbol id="instagram" viewbox="0 0 45 45">
+        <g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9969 1.99875C16.1962 1.8975 16.8975 1.875 22.5 1.875C28.1025 1.875 28.8038 1.89937 31.0013 1.99875C33.1988 2.09812 34.6987 2.44875 36.0112 2.95688C37.3856 3.47625 38.6325 4.28812 39.6637 5.33812C40.7137 6.3675 41.5238 7.6125 42.0413 8.98875C42.5513 10.3013 42.9 11.8013 43.0013 13.995C43.1025 16.1981 43.125 16.8994 43.125 22.5C43.125 28.1025 43.1006 28.8037 43.0013 31.0031C42.9019 33.1969 42.5513 34.6969 42.0413 36.0094C41.5237 37.3858 40.7124 38.6329 39.6637 39.6637C38.6325 40.7137 37.3856 41.5238 36.0112 42.0413C34.6987 42.5513 33.1987 42.9 31.005 43.0013C28.8037 43.1025 28.1025 43.125 22.5 43.125C16.8975 43.125 16.1962 43.1006 13.9969 43.0013C11.8031 42.9019 10.3031 42.5513 8.99063 42.0413C7.61423 41.5237 6.36716 40.7124 5.33625 39.6637C4.28696 38.6338 3.47497 37.3873 2.95688 36.0112C2.44875 34.6987 2.1 33.1987 1.99875 31.005C1.8975 28.8019 1.875 28.1006 1.875 22.5C1.875 16.8975 1.89937 16.1962 1.99875 13.9987C2.09812 11.8013 2.44875 10.3013 2.95688 8.98875C3.47573 7.61265 4.28835 6.36621 5.33812 5.33625C6.36758 4.28719 7.61339 3.47521 8.98875 2.95688C10.3013 2.44875 11.8013 2.1 13.995 1.99875H13.9969ZM30.8344 5.71125C28.6594 5.61188 28.0069 5.59125 22.5 5.59125C16.9931 5.59125 16.3406 5.61188 14.1656 5.71125C12.1537 5.80312 11.0625 6.13875 10.335 6.42188C9.37313 6.79688 8.685 7.24125 7.96313 7.96313C7.27883 8.62885 6.75221 9.43928 6.42188 10.335C6.13875 11.0625 5.80312 12.1537 5.71125 14.1656C5.61188 16.3406 5.59125 16.9931 5.59125 22.5C5.59125 28.0069 5.61188 28.6594 5.71125 30.8344C5.80312 32.8462 6.13875 33.9375 6.42188 34.665C6.75187 35.5594 7.27875 36.3713 7.96313 37.0369C8.62875 37.7212 9.44063 38.2481 10.335 38.5781C11.0625 38.8613 12.1537 39.1969 14.1656 39.2887C16.3406 39.3881 16.9913 39.4087 22.5 39.4087C28.0087 39.4087 28.6594 39.3881 30.8344 39.2887C32.8462 39.1969 33.9375 38.8613 34.665 38.5781C35.6269 38.2031 36.315 37.7588 37.0369 37.0369C37.7212 36.3713 38.2481 35.5594 38.5781 34.665C38.8613 33.9375 39.1969 32.8462 39.2887 30.8344C39.3881 28.6594 39.4087 28.0069 39.4087 22.5C39.4087 16.9931 39.3881 16.3406 39.2887 14.1656C39.1969 12.1537 38.8613 11.0625 38.5781 10.335C38.2031 9.37313 37.7588 8.685 37.0369 7.96313C36.3711 7.27888 35.5607 6.75227 34.665 6.42188C33.9375 6.13875 32.8462 5.80312 30.8344 5.71125ZM19.8656 28.8581C21.3369 29.4706 22.9751 29.5532 24.5005 29.092C26.0259 28.6307 27.3439 27.6542 28.2293 26.3292C29.1147 25.0042 29.5126 23.4129 29.3551 21.8271C29.1976 20.2413 28.4944 18.7593 27.3656 17.6344C26.6461 16.9153 25.776 16.3646 24.8181 16.0222C23.8602 15.6797 22.8383 15.5538 21.8259 15.6537C20.8136 15.7535 19.8359 16.0766 18.9634 16.5996C18.0909 17.1227 17.3451 17.8326 16.7799 18.6785C16.2147 19.5243 15.8441 20.4849 15.6947 21.4912C15.5453 22.4974 15.6209 23.5243 15.916 24.4978C16.2111 25.4714 16.7184 26.3674 17.4014 27.1214C18.0843 27.8753 18.9259 28.4685 19.8656 28.8581ZM15.0037 15.0037C15.9882 14.0193 17.1568 13.2384 18.4431 12.7057C19.7293 12.1729 21.1078 11.8987 22.5 11.8987C23.8922 11.8987 25.2707 12.1729 26.5569 12.7057C27.8431 13.2384 29.0118 14.0193 29.9963 15.0037C30.9807 15.9882 31.7616 17.1568 32.2943 18.4431C32.8271 19.7293 33.1013 21.1078 33.1013 22.5C33.1013 23.8922 32.8271 25.2707 32.2943 26.5569C31.7616 27.8431 30.9807 29.0118 29.9963 29.9963C28.0081 31.9844 25.3116 33.1013 22.5 33.1013C19.6884 33.1013 16.9919 31.9844 15.0037 29.9963C13.0156 28.0081 11.8987 25.3116 11.8987 22.5C11.8987 19.6884 13.0156 16.9919 15.0037 15.0037ZM35.4525 13.4775C35.6964 13.2474 35.8917 12.9707 36.0268 12.6637C36.1619 12.3568 36.234 12.0258 36.2389 11.6905C36.2438 11.3552 36.1814 11.0223 36.0553 10.7115C35.9292 10.4008 35.7421 10.1185 35.5049 9.88132C35.2678 9.64419 34.9855 9.45705 34.6747 9.33097C34.364 9.2049 34.0311 9.14245 33.6958 9.14734C33.3604 9.15223 33.0295 9.22435 32.7225 9.35943C32.4156 9.49451 32.1389 9.6898 31.9087 9.93375C31.4612 10.4082 31.2162 11.0384 31.2257 11.6905C31.2352 12.3426 31.4985 12.9654 31.9597 13.4266C32.4209 13.8878 33.0436 14.1511 33.6958 14.1606C34.3479 14.1701 34.9781 13.925 35.4525 13.4775Z"/>
+        </g>
+    </symbol>
+    <symbol id="mail" viewbox="0 0 38 30">
+        <g>
+            <path d="M5.66634 1.66797H32.333C34.1663 1.66797 35.6663 3.16797 35.6663 5.0013V25.0013C35.6663 26.8346 34.1663 28.3346 32.333 28.3346H5.66634C3.83301 28.3346 2.33301 26.8346 2.33301 25.0013V5.0013C2.33301 3.16797 3.83301 1.66797 5.66634 1.66797Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="#63533e"/>
+            <path d="M35.6663 5L18.9997 16.6667L2.33301 5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="#63533e"/>
+        </g>
+    </symbol>
+    <symbol id="phone" viewbox ="0 0 34 34">
+        <g>
+            <path d="M29.5002 33.25H29.2877C4.72519 31.8375 1.23769 11.1125 0.750187 4.7875C0.710906 4.29573 0.769048 3.80103 0.921281 3.33176C1.07351 2.8625 1.31685 2.42788 1.63733 2.05282C1.95782 1.67775 2.34917 1.36961 2.78895 1.14605C3.22873 0.922489 3.7083 0.787902 4.20019 0.750001H11.0877C11.5884 0.749516 12.0777 0.899388 12.4922 1.1802C12.9068 1.46102 13.2274 1.85984 13.4127 2.325L15.3127 7C15.4956 7.45443 15.541 7.9526 15.4432 8.43261C15.3455 8.91263 15.1088 9.35334 14.7627 9.7L12.1002 12.3875C12.5161 14.7509 13.6479 16.9296 15.3426 18.6287C17.0372 20.3278 19.2129 21.4654 21.5752 21.8875L24.2877 19.2C24.6396 18.8577 25.0844 18.6266 25.5668 18.5354C26.0492 18.4443 26.5477 18.4972 27.0002 18.6875L31.7127 20.575C32.1708 20.7661 32.5617 21.0893 32.8355 21.5033C33.1094 21.9174 33.2537 22.4036 33.2502 22.9V29.5C33.2502 30.4946 32.8551 31.4484 32.1518 32.1517C31.4486 32.8549 30.4948 33.25 29.5002 33.25ZM4.50019 3.25C4.16867 3.25 3.85072 3.3817 3.6163 3.61612C3.38188 3.85054 3.25019 4.16848 3.25019 4.5V4.6C3.82519 12 7.51269 29.5 29.4252 30.75C29.5894 30.7601 29.754 30.7378 29.9096 30.6842C30.0651 30.6306 30.2086 30.5468 30.3317 30.4376C30.4548 30.3285 30.5551 30.1961 30.6269 30.048C30.6987 29.9 30.7406 29.7393 30.7502 29.575V22.9L26.0377 21.0125L22.4502 24.575L21.8502 24.5C10.9752 23.1375 9.50019 12.2625 9.50019 12.15L9.42519 11.55L12.9752 7.9625L11.1002 3.25H4.50019Z" fill="white"/>
+        </g>
+    </symbol>
+</svg>
+
+</div>
+
+<!-- Modal -->
+<!-- Modals -->
+
+
+<div class="modal" id="call__modal">
+    <div class="modal__inner">
+        <div class="modal__content">
+            <h2 class="modal__title">Закажите
+            консультацию</h2>
+            <h4 class="modal__subtitle">Менеджер перезвонит Вам в ближайшее время</h4>
+            <input class="input input--border" type="text" placeholder="Ваше имя">
+            <input class="input input--border" type="tel" placeholder="+7 (___) ___ __ __">
+            <div class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="checkbox-modal" name="" value="agreement">
+                <label class="checkbox__label modal__label" for="checkbox-modal">
+                    <p>Я даю согласие на обработку своих&nbsp;
+                        <a href="">
+                            <span>персональных данных</span>
+                        </a>
+                    </p>
+                </label>
+            </div>
+            <button class="btn">Перезвоните мне</button>
+            <img class="modal__decor1" src="assets/img/decor/3.png" alt="">
+            <img class="modal__decor2" src="assets/img/decor/4.png" alt="">
+            <btn class="modal__close" type="button" data-modal-close="">
+                <span class="modal__close-line">1</span>
+                <span class="modal__close-line">2</span>
+            </btn>
+        </div>
+    </div>
+</div>
+<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>
